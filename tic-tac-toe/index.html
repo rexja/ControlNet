@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精美井字遊戲</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-title">
+            <h1>井字遊戲 <i class="fas fa-gamepad"></i></h1>
+            <p>你是 <span class="player-mark">X</span>，電腦是 <span class="computer-mark">O</span></p>
+        </div>
+        
+        <div class="status">
+            <p id="message">輪到你了！</p>
+        </div>
+        
+        <div class="board" id="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        
+        <div class="score-board">
+            <div class="score">
+                <span>你：</span>
+                <span id="player-score">0</span>
+            </div>
+            <div class="score">
+                <span>平局：</span>
+                <span id="draw-score">0</span>
+            </div>
+            <div class="score">
+                <span>電腦：</span>
+                <span id="computer-score">0</span>
+            </div>
+        </div>
+        
+        <button id="restart-button">重新開始</button>
+    </div>
+    
+    <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text></div>
+        <button id="restartButton">再玩一次</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
